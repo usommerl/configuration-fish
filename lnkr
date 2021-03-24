@@ -2,7 +2,6 @@
 
 install() {
   link "$REPOSITORY_ROOT" ~/.config/fish
-  link "$REPOSITORY_ROOT/z.lua" ~/.local/share/z.lua
 }
 
 source <(curl -Lfs https://git.io/lnkr)
