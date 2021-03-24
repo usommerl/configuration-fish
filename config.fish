@@ -1,6 +1,7 @@
 abbr -a -g g git
 abbr -a -g h history
 abbr -a -g vi nvim
+abbr -a -g v nvim
 abbr -a -g - cd -
 
 alias l 'exa -lg --time-style=long-iso'
