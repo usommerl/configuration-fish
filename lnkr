@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+install() {
+  link "$REPOSITORY_ROOT" ~/.config/fish
+}
+
+source <(curl -Lfs https://git.io/lnkr)
