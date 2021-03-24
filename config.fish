@@ -4,7 +4,7 @@ abbr -a -g vi nvim
 abbr -a -g v nvim
 abbr -a -g - cd -
 
-alias l 'exa -lg --time-style=long-iso'
+alias l 'exa -lg --time-style=long-iso --git'
 alias ll 'l -a'
 
 function update_terminal_start_directory --on-event fish_preexec
