@@ -1,3 +1,4 @@
+abbr -a -g g git
 abbr -a -g vi nvim
 abbr -a -g h history
 
