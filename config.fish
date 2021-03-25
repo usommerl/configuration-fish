@@ -1,9 +1,12 @@
+# {{{ Abbreviations
 abbr -a -g g git
 abbr -a -g h history
 abbr -a -g vi nvim
 abbr -a -g v nvim
 abbr -a -g - cd -
+# }}}
 
+# {{{ Functions
 alias l 'exa -lg --time-style=long-iso --git'
 alias ll 'l -a'
 
@@ -15,8 +18,11 @@ function fish_greeting
   # Workaround for nasty ⏎ symbol before prompt after terminal startup
   clear
 end
+# }}}
 
+# {{{ Initialisation
 starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
    set -xg _ZO_FZF_OPTS '-1 --reverse'
+# }}}
