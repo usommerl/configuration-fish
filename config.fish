@@ -11,7 +11,11 @@ function update_terminal_start_directory --on-event fish_preexec
   echo (pwd) > $HOME/.terminal_start_directory
 end
 
-set fish_greeting
+function fish_greeting
+  # Workaround for nasty ⏎ symbol before prompt after terminal startup
+  clear
+end
+
 starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
