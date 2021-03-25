@@ -61,6 +61,7 @@ end
 # }}}
 
 # {{{ Initialisation
+source /etc/grc.fish
 starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
