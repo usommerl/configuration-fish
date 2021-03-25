@@ -13,19 +13,6 @@ fish_add_path ~/.cargo/bin
 
 set -gx MANPAGER 'nvim -c "set ft=man" -'
 set -gx LESS '-iR'
-
-set -gx FZF_DEFAULT_OPTS '--height 60% --multi --reverse --bind ctrl-f:page-down,ctrl-b:page-up'
-set -gx FZF_ALT_C_OPTS "--preview 'tree -C {} | head -100'"
-
-if command -v fd >/dev/null
-  set -gx FZF_DEFAULT_COMMAND 'fd -H -I --type f --color=never'
-  set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
-  set -gx FZF_ALT_C_COMMAND 'fd -H -I --exclude ".git" --exclude "target" --exclude ".bloop" --exclude ".metals" --type d . --color=never'
-end
-
-if command -v bat >/dev/null
-  set -gx FZF_CTRL_T_OPTS "--preview 'bat --color=always --line-range :500 {}'"
-end
 # }}}
 
 # {{{ Functions
@@ -39,6 +26,35 @@ end
 function fish_greeting
   # Workaround for nasty ⏎ symbol before prompt after terminal startup
   clear
+end
+
+function cat
+  if command -v bat >/dev/null 2>&1
+    bat $argv
+  else
+    command cat $argv
+  end
+end
+
+function __bctl_connect
+  bluetoothctl -- power off
+  bluetoothctl -- power on
+  bluetoothctl -- connect $argv[1]
+end
+
+function bctl
+  switch $argv[1]
+    case off
+      bluetoothctl -- power off
+    case btc22
+      __bctl_connect 70:B3:D5:94:A3:32
+    case aiaiai
+      __bctl_connect 00:08:E0:73:07:70
+    case nubert
+      __bctl_connect CC:90:93:12:6D:C8
+    case '*'
+      echo "Unknown argument: $argv[1]"
+  end
 end
 # }}}
 
