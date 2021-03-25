@@ -13,6 +13,8 @@ fish_add_path ~/.cargo/bin
 
 set -gx MANPAGER 'nvim -c "set ft=man" -'
 set -gx LESS '-iR'
+
+set fzf_fd_opts --hidden --exclude=.git
 # }}}
 
 # {{{ Functions
