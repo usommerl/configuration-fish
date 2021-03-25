@@ -59,10 +59,18 @@ function bctl
       echo "Unknown argument: $argv[1]"
   end
 end
+
+function source_if_exists
+  if [ -f $argv[1] ]
+    source $argv[1]
+  end
+end
 # }}}
 
 # {{{ Initialisation
-source /etc/grc.fish
+source_if_exists "$HOME/.bashhub/bashhub.fish"
+source_if_exists "/etc/grc.fish"
+
 starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
