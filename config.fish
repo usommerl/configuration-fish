@@ -1,4 +1,5 @@
 # {{{ Abbreviations
+abbr -a -g d docker
 abbr -a -g g git
 abbr -a -g h history
 abbr -a -g vi nvim
