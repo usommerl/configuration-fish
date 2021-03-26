@@ -5,6 +5,9 @@ abbr -a -g h history
 abbr -a -g vi nvim
 abbr -a -g v nvim
 abbr -a -g - cd -
+abbr -a -g dark 'alacritty-colorscheme -V apply material.yaml'
+abbr -a -g light 'alacritty-colorscheme -V apply pencil.yaml'
+abbr -a -g toggle 'alacritty-colorscheme -V toggle'
 # }}}
 
 # {{{ Variables
