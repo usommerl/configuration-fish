@@ -1,13 +1,13 @@
 # {{{ Abbreviations
-abbr -a -g d docker
-abbr -a -g g git
-abbr -a -g h history
-abbr -a -g vi nvim
-abbr -a -g v nvim
-abbr -a -g - cd -
-abbr -a -g dark 'alacritty-colorscheme -V apply material.yaml'
-abbr -a -g light 'alacritty-colorscheme -V apply pencil.yaml'
-abbr -a -g toggle 'alacritty-colorscheme -V toggle'
+abbr -ag d docker
+abbr -ag g git
+abbr -ag h history
+abbr -ag vi nvim
+abbr -ag v nvim
+abbr -ag - cd -
+abbr -ag dark 'alacritty-colorscheme -V apply material.yaml'
+abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
+abbr -ag toggle 'alacritty-colorscheme -V toggle'
 # }}}
 
 # {{{ Variables
