@@ -89,6 +89,10 @@ function fish_greeting
   clear
 end
 
+function fish_title
+  pwd
+end
+
 function cat
   if command -v bat >/dev/null 2>&1
     bat $argv
