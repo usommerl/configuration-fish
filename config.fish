@@ -73,7 +73,7 @@ set -gx MANPAGER 'nvim -c "set ft=man" -'
 set -gx LESS '-iR'
 
 set -gx fzf_fd_opts --hidden --exclude=.git
-set -gx EXA_COLORS 'da=38;5;244:uu=38;5;244:gu=38;5;244:un=33:gn=33:ur=15:gr=15:tr=15:uw=33:gw=33:tw=33:sn=15:sb=15:ux=33:ue=33:gx=33:tx=33:ga=31:gm=31'
+set -gx EXA_COLORS 'da=38;5;244:uu=38;5;244:gu=38;5;244:un=33:gn=33:ur=38;5;244:gr=38;5;244:tr=38;5;244:uw=38;5;244:gw=38;5;244:tw=38;5;244:sn=15:sb=15:ux=38;5;244:ue=38;5;244:gx=38;5;244:tx=38;5;244:ga=1;31:gm=1;31'
 # }}}
 
 # {{{ Functions
