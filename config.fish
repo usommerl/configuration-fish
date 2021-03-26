@@ -15,7 +15,8 @@ fish_add_path ~/.cargo/bin
 set -gx MANPAGER 'nvim -c "set ft=man" -'
 set -gx LESS '-iR'
 
-set fzf_fd_opts --hidden --exclude=.git
+set -gx fzf_fd_opts --hidden --exclude=.git
+set -gx EXA_COLORS 'da=38;5;244:uu=38;5;244:gu=38;5;244:un=1;33:gn=1;33:ur=15:gr=15:tr=15:uw=33:gw=33:tw=33:sn=15:sb=15:ux=32'
 # }}}
 
 # {{{ Functions
