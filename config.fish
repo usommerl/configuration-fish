@@ -111,8 +111,6 @@ function bctl
   switch $argv[1]
     case off
       bluetoothctl -- power off
-    case btc22
-      __bctl_connect 70:B3:D5:94:A3:32
     case aiaiai
       __bctl_connect 00:08:E0:73:07:70
     case nubert
@@ -121,6 +119,8 @@ function bctl
       echo "Unknown argument: $argv[1]"
   end
 end
+complete -c bctl -n "not __fish_seen_subcommand_from $commands" \
+    -a "off aiaiai nubert"
 
 function source_if_exists
   if [ -f $argv[1] ]
