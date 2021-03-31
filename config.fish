@@ -93,14 +93,6 @@ function fish_title
   pwd
 end
 
-function cat
-  if command -v bat >/dev/null 2>&1
-    bat $argv
-  else
-    command cat $argv
-  end
-end
-
 function __bctl_connect
   bluetoothctl -- power off
   bluetoothctl -- power on
