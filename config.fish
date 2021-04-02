@@ -1,4 +1,5 @@
 # {{{ Abbreviations
+abbr -ag cat 'bat'
 abbr -ag d docker
 abbr -ag g git
 abbr -ag h history
