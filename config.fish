@@ -1,6 +1,7 @@
 # {{{ Abbreviations
 abbr -ag cat 'bat'
 abbr -ag d docker
+abbr -ag c docker-compose
 abbr -ag g git
 abbr -ag h history
 abbr -ag vi nvim
