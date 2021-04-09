@@ -130,4 +130,10 @@ starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
    set -xg _ZO_FZF_OPTS '-1 --reverse'
+
+if status --is-login
+  if test -z "$DISPLAY" -a $XDG_VTNR = 1
+    exec startx -- -keeptty &>-
+  end
+end
 # }}}
