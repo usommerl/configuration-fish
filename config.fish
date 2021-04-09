@@ -4,6 +4,7 @@ abbr -ag d docker
 abbr -ag c docker-compose
 abbr -ag g git
 abbr -ag h history
+abbr -ag p paru
 abbr -ag vi nvim
 abbr -ag v nvim
 abbr -ag - cd -
