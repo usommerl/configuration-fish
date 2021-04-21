@@ -65,6 +65,7 @@ abbr -ag gsw 'git sw'
 abbr -ag grs 'git remote -vv show'
 abbr -ag gt 'git tag'
 abbr -ag gtl 'git tag --list'
+abbr -ag gw 'git worktree'
 # }}}
 
 # {{{ Variables
