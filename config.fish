@@ -14,6 +14,7 @@ abbr -ag toggle 'alacritty-colorscheme -V toggle'
 abbr -ag tree 'exa --tree'
 
 abbr -ag ga 'git add'
+abbr -ag gai 'git add -ip'
 abbr -ag gau 'git add -u'
 abbr -ag gb 'git branch'
 abbr -ag gbc 'git rev-parse --abbrev-ref HEAD'
