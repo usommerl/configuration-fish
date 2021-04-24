@@ -11,6 +11,7 @@ abbr -ag - cd -
 abbr -ag dark 'alacritty-colorscheme -V apply material.yaml'
 abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
 abbr -ag toggle 'alacritty-colorscheme -V toggle'
+abbr -ag tree 'exa --tree'
 
 abbr -ag ga 'git add'
 abbr -ag gau 'git add -u'
@@ -136,6 +137,11 @@ starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
    set -xg _ZO_FZF_OPTS '-1 --reverse'
+
+
+if status --is-interactive
+  keychain --eval --quiet -Q id_rsa | source
+end
 
 if status --is-login
   if test -z "$DISPLAY" -a $XDG_VTNR = 1
