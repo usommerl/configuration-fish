@@ -1,6 +1,9 @@
 # {{{ Abbreviations
 abbr -ag cat 'bat'
 abbr -ag d docker
+abbr -ag dc 'docker context'
+abbr -ag dcu 'docker context use'
+abbr -ag dcl 'docker context ls'
 abbr -ag c docker-compose
 abbr -ag g git
 abbr -ag h history
