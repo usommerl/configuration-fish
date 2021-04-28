@@ -3,6 +3,7 @@ abbr -ag cat 'bat'
 abbr -ag d docker
 abbr -ag dc 'docker context'
 abbr -ag dcu 'docker context use'
+abbr -ag dcud 'docker context use default'
 abbr -ag dcl 'docker context ls'
 abbr -ag c docker-compose
 abbr -ag g git
