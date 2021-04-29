@@ -5,6 +5,7 @@ abbr -ag dc 'docker context'
 abbr -ag dcu 'docker context use'
 abbr -ag dcud 'docker context use default'
 abbr -ag dcl 'docker context ls'
+abbr -ag dps 'docker ps --format "table {{.Image}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
 abbr -ag c docker-compose
 abbr -ag g git
 abbr -ag h history
