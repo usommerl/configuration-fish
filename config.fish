@@ -71,7 +71,7 @@ abbr -ag gsuurrr 'git submodule update --remote --rebase --recursive'
 abbr -ag gsw 'git sw'
 abbr -ag grs 'git remote -vv show'
 abbr -ag gt 'git tag'
-abbr -ag gtl 'git tag --list'
+abbr -ag gtl 'git tag --list | sort -V'
 abbr -ag gw 'git worktree'
 # }}}
 
