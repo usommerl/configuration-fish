@@ -10,6 +10,7 @@ abbr -ag c docker-compose
 abbr -ag g git
 abbr -ag h history
 abbr -ag p paru
+abbr -ag ps "paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
 abbr -ag vi nvim
 abbr -ag v nvim
 abbr -ag - cd -
