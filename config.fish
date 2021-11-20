@@ -74,6 +74,7 @@ abbr -ag gsw 'git sw'
 abbr -ag grs 'git remote -vv show'
 abbr -ag gt 'git tag'
 abbr -ag gtl 'git tag --list | sort -V'
+abbr -ag gtr 'git trim'
 abbr -ag gw 'git worktree'
 # }}}
 
