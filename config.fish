@@ -7,7 +7,6 @@ abbr -ag dcud 'docker context use default'
 abbr -ag dcl 'docker context ls'
 abbr -ag dps 'command docker ps --format "table {{.Image}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}" | begin sed -u 1q; sort -k 2; end | grcat conf.dockerps'
 abbr -ag c docker-compose
-abbr -ag g git
 abbr -ag h history
 abbr -ag p paru
 abbr -ag ps "paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
@@ -19,6 +18,16 @@ abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
 abbr -ag toggle 'alacritty-colorscheme -V toggle'
 abbr -ag tree 'exa --tree'
 
+
+# kubernetes abbreviations
+abbr -ag k 'kubectl'
+abbr -ag kc 'kubectx'
+abbr -ag kn 'kubens'
+abbr -ag kg 'kubectl get'
+abbr -ag kd 'kubectl describe'
+
+# git abbreviations
+abbr -ag g git
 abbr -ag ga 'git add'
 abbr -ag gai 'git add -ip'
 abbr -ag gau 'git add -u'
