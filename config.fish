@@ -168,3 +168,5 @@ if status --is-login
   end
 end
 # }}}
+
+direnv hook fish | source
