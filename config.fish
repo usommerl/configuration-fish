@@ -150,7 +150,6 @@ end
 # }}}
 
 # {{{ Initialisation
-source_if_exists "$HOME/.bashhub/bashhub.fish"
 source_if_exists "/etc/grc.fish"
 
 starship init fish | source
@@ -161,6 +160,11 @@ zoxide init fish | source && \
 
 if status --is-interactive
   keychain --eval --quiet -Q id_rsa | source
+
+  set -gx ATUIN_NOBIND "true"
+  atuin init fish | source
+  bind \cr _atuin_search
+  bind -M insert \cr _atuin_search
 end
 
 if status --is-login
