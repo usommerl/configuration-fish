@@ -1,5 +1,6 @@
 # {{{ Abbreviations
 abbr -ag cat 'bat'
+abbr -ag watch 'viddy'
 abbr -ag d docker
 abbr -ag dc 'docker context'
 abbr -ag dcu 'docker context use'
