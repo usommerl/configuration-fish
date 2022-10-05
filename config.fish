@@ -13,6 +13,7 @@ abbr -ag p paru
 abbr -ag ps "paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
 abbr -ag vi nvim
 abbr -ag v nvim
+abbr -ag n nvim
 abbr -ag - cd -
 abbr -ag dark 'alacritty-colorscheme -V apply material.yaml'
 abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
