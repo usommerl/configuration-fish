@@ -157,6 +157,7 @@ source_if_exists "/etc/grc.fish"
 starship init fish | source
 zoxide init fish | source && \
    abbr -a -g z zi && \
+   abbr -a -g Z zi && \
    set -xg _ZO_FZF_OPTS '-1 --reverse'
 
 
