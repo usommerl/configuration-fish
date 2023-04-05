@@ -93,8 +93,8 @@ abbr -ag gw 'git worktree'
 # {{{ Variables
 set -gx MANPAGER 'nvim +Man!'
 set -gx LESS '-iR'
-#set -gx JAVA_HOME ~/.cache/coursier/jvm/adopt@1.11.0-9
 set -gx GOPATH ~/.go
+set -gx SBT_TPOLECAT_DEV
 
 fish_add_path ~/.local/bin
 fish_add_path ~/.local/share/coursier/bin
