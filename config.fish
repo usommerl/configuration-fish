@@ -178,4 +178,5 @@ if status --is-login
 end
 # }}}
 
+set -gx DIRENV_LOG_FORMAT ""
 direnv hook fish | source
