@@ -16,7 +16,7 @@ abbr -ag vi nvim
 abbr -ag v nvim
 abbr -ag n nvim
 abbr -ag - cd -
-abbr -ag dark 'alacritty-colorscheme -V apply material.yaml'
+abbr -ag dark 'alacritty-colorscheme -V apply tokyonight-moon.yml'
 abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
 abbr -ag toggle 'alacritty-colorscheme -V toggle'
 abbr -ag tree 'exa --tree'
