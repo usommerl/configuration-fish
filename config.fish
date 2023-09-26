@@ -20,6 +20,7 @@ abbr -ag dark 'alacritty-colorscheme -V apply tokyonight-moon.yml'
 abbr -ag light 'alacritty-colorscheme -V apply pencil.yaml'
 abbr -ag toggle 'alacritty-colorscheme -V toggle'
 abbr -ag tree 'exa --tree'
+abbr -ag fh 'nix run "https://flakehub.com/f/DeterminateSystems/fh/*.tar.gz"'
 
 
 # kubernetes abbreviations
