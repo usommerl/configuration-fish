@@ -103,6 +103,7 @@ fish_add_path ~/.local/share/coursier/bin
 fish_add_path ~/.cargo/bin
 fish_add_path ~/.go/bin
 fish_add_path ~/.cache/scalacli/local-repo/bin/scala-cli
+fish_add_path /opt/google-cloud-cli/bin
 
 set -gx fzf_fd_opts --hidden --exclude=.git
 set -gx FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*" --bind ctrl-alt-k:preview-up,ctrl-alt-j:preview-down'
